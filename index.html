@@ -23,7 +23,8 @@
 
         .navbar {
     width: 100%;
-    position: sticky;
+    height: 82px;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -34,7 +35,9 @@
     justify-content: space-between;
     align-items: center;
 }
-
+body {
+    padding-top: 82px;
+}
         .logo-box {
             display: flex;
             align-items: center;
@@ -308,12 +311,13 @@
         }
 
         @media (max-width: 900px) {
-    .navbar {
-    position: sticky;
-    top: 0;
+   .navbar {
+    height: 74px;
     padding: 12px 5%;
 }
-
+body {
+    padding-top: 74px;
+}
     .logo-box img {
         width: 42px;
         height: 42px;
@@ -329,7 +333,7 @@
 
     .hero {
         min-height: 100vh;
-        padding: 140px 7% 60px;
+        padding: 60px 7% 60px;
         display: grid;
         grid-template-columns: 1fr 180px;
         gap: 15px;
