@@ -311,12 +311,22 @@ body {
         }
 
         @media (max-width: 900px) {
-   .navbar {
-    height: 74px;
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 78px;
     padding: 12px 5%;
+    background: #191919;
+    z-index: 99999;
 }
 body {
-    padding-top: 74px;
+    padding-top: 78px;
+}
+
+.hero {
+    padding-top: 60px;
 }
     .logo-box img {
         width: 42px;
