@@ -23,7 +23,7 @@
 
         .navbar {
     width: 100%;
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -33,7 +33,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transform: translateZ(0);
 }
 
         .logo-box {
@@ -310,8 +309,10 @@
 
         @media (max-width: 900px) {
     .navbar {
-        padding: 12px 5%;
-    }
+    position: sticky;
+    top: 0;
+    padding: 12px 5%;
+}
 
     .logo-box img {
         width: 42px;
