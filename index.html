@@ -365,6 +365,43 @@
         grid-template-columns: 1fr;
     }
 }
+        @media only screen and (max-width: 900px) {
+    .hero {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: flex-start !important;
+        padding: 140px 8% 70px !important;
+        min-height: 100vh !important;
+        text-align: left !important;
+    }
+
+    .hero-card {
+        display: none !important;
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+        overflow: hidden !important;
+    }
+
+    .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .hero-content h1 {
+        font-size: 36px !important;
+    }
+
+    .hero-content p {
+        font-size: 14px !important;
+        max-width: 100% !important;
+    }
+
+    .btns {
+        justify-content: flex-start !important;
+    }
+}
         
     </style>
 </head>
