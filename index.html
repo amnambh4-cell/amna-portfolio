@@ -311,44 +311,59 @@
         }
 
         @media (max-width: 900px) {
-            .hero {
-    min-height: auto;
-    padding: 120px 6% 50px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    background-position: center top;
+    .navbar {
+        padding: 12px 5%;
+    }
+
+    .logo-box img {
+        width: 42px;
+        height: 42px;
+    }
+
+    .logo-box span {
+        font-size: 15px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        min-height: 100vh;
+        padding: 150px 7% 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        background:
+            linear-gradient(rgba(35, 15, 22, 0.72), rgba(35, 15, 22, 0.86)),
+            url("./mylogo.jpg");
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .hero-content h1 {
+        font-size: 40px;
+    }
+
+    .hero-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .btns {
+        justify-content: flex-start;
+    }
+
+    .hero-card {
+        display: none;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
-
-            .hero-content h1 {
-                font-size: 38px;
-            }
-
-            .btns {
-                justify-content: center;
-            }
-
-            .skills-grid,
-            .projects-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-           .hero-card img {
-    width: 100%;
-    height: auto;
-    max-height: 300px;
-    object-fit: contain;
-}
-                       .hero-card {
-                display: flex;
-                justify-content: center;
-                padding: 12px;
-            }
-        }
         
     </style>
 </head>
