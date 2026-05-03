@@ -22,18 +22,19 @@
         }
 
         .navbar {
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 999;
-            background: rgba(25, 25, 25, 0.88);
-            backdrop-filter: blur(10px);
-            padding: 15px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: rgba(25, 25, 25, 0.95);
+    backdrop-filter: blur(10px);
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateZ(0);
+}
 
         .logo-box {
             display: flex;
@@ -418,9 +419,8 @@
 }
 
 .hero-card {
-    animation: fadeUp 1.4s ease forwards, floatImage 4s ease-in-out infinite;
+    animation: fadeUp 1.4s ease forwards;
 }
-
 .btn:hover {
     transform: translateY(-4px);
     box-shadow: 0 12px 25px rgba(0,0,0,0.18);
@@ -431,6 +431,7 @@
 .about-box,
 .contact-box {
     animation: fadeUp 0.9s ease both;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .skill-card:hover,
