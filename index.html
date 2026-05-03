@@ -163,11 +163,6 @@
     justify-content: center;
     padding: 20px;
 }
-@media (max-width: 900px) {
-    .hero-card img {
-        max-height: 350px;
-    }
-}
         .hero-card img {
     width: 100%;
     height: auto;
@@ -335,10 +330,7 @@
     .hero {
         min-height: 100vh;
         padding: 150px 7% 70px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: left;
+        display: block;
         background:
             linear-gradient(rgba(35, 15, 22, 0.72), rgba(35, 15, 22, 0.86)),
             url("./mylogo.jpg");
@@ -346,8 +338,13 @@
         background-position: center top;
     }
 
+    .hero-content {
+        width: 100%;
+        padding-top: 40px;
+    }
+
     .hero-content h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .hero-content p {
@@ -360,7 +357,7 @@
     }
 
     .hero-card {
-        display: none;
+        display: none !important;
     }
 
     .skills-grid,
